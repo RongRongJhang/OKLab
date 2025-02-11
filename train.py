@@ -81,7 +81,7 @@ def train(epoch):
 def checkpoint(epoch):
     if not os.path.exists("/content/drive/MyDrive/datasets/LOLdataset/weights"):          
         os.mkdir("/content/drive/MyDrive/datasets/LOLdataset/weights") 
-    if not os.path.exists("./weights/train"):          
+    if not os.path.exists("/content/drive/MyDrive/datasets/LOLdataset/weights/train"):          
         os.mkdir("/content/drive/MyDrive/datasets/LOLdataset/weights/train")  
     model_out_path = "/content/drive/MyDrive/datasets/LOLdataset/weights/train/epoch_{}.pth".format(epoch)
     torch.save(model.state_dict(), model_out_path)
